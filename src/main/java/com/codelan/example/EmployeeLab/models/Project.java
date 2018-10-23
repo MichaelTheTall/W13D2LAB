@@ -76,5 +76,9 @@ public class Project {
     public void setEmployees(List<Employee> employees) {
         this.employees = employees;
     }
+
+    public void addEmployee(Employee employee) {
+        this.employees.add(employee);
+    }
 }
 
