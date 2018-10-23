@@ -1,5 +1,7 @@
 package com.codelan.example.EmployeeLab.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +20,7 @@ public class Project {
     @Column(name = "duration")
     private int duration;
 
+    @JsonIgnore
     @ManyToMany
     @JoinTable(
             name = "employees_projects",
